@@ -16,7 +16,9 @@ struct ContentView : View {
             HStack {
                 Spacer()
                 Text("name")
-                TextField($name, placeholder: Text("Input your name..."))
+                TextField($name, placeholder: Text("Input your name...")){
+                    UIApplication.shared.keyWindow?.endEditing(true)
+                }
                 Spacer()
             }
             Button(action: {
