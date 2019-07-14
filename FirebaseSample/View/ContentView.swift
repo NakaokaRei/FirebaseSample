@@ -10,22 +10,15 @@ import SwiftUI
 
 struct ContentView : View {
     @EnvironmentObject private var firebaseModel: FirebaseViewModel
-    @State private var name: String = ""
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Text("name")
-                TextField($name, placeholder: Text("Input your name...")){
-                    UIApplication.shared.keyWindow?.endEditing(true)
+        NavigationView{
+            List{
+                MessageView()
+                ForEach(firebaseModel.messageList.identified(by: \.self)){ comment in
+                    MessageRow(message: comment)
                 }
-                Spacer()
             }
-            Button(action: {
-                self.firebaseModel.add(name: self.name)
-            }) {
-                Text("Add")
-            }
+            .navigationBarTitle(Text("Message"))
         }
     }
 }

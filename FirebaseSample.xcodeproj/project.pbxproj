@@ -16,6 +16,7 @@
 		B1962EED22D6FF1E000F6BA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1962EEC22D6FF1E000F6BA1 /* GoogleService-Info.plist */; };
 		B1962EF122D7038F000F6BA1 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1962EF022D7038F000F6BA1 /* FirebaseViewModel.swift */; };
 		B1F363DD22DB60F3003D96F5 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F363DC22DB60F2003D96F5 /* MessageView.swift */; };
+		B1F363DF22DB67AC003D96F5 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F363DE22DB67AC003D96F5 /* MessageRow.swift */; };
 		F170B600D33D6464C2806018 /* Pods_FirebaseSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08230BD47E510088EA7276 /* Pods_FirebaseSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		B1962EEC22D6FF1E000F6BA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1962EF022D7038F000F6BA1 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		B1F363DC22DB60F2003D96F5 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		B1F363DE22DB67AC003D96F5 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		C6C62F11FED06283EB0A54E5 /* Pods-FirebaseSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSample.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseSample/Pods-FirebaseSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 			children = (
 				B1962EDC22D6FD33000F6BA1 /* ContentView.swift */,
 				B1F363DC22DB60F2003D96F5 /* MessageView.swift */,
+				B1F363DE22DB67AC003D96F5 /* MessageRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				B1962ED922D6FD33000F6BA1 /* AppDelegate.swift in Sources */,
 				B1962EDB22D6FD33000F6BA1 /* SceneDelegate.swift in Sources */,
+				B1F363DF22DB67AC003D96F5 /* MessageRow.swift in Sources */,
 				B1962EDD22D6FD33000F6BA1 /* ContentView.swift in Sources */,
 				B1962EF122D7038F000F6BA1 /* FirebaseViewModel.swift in Sources */,
 				B1F363DD22DB60F3003D96F5 /* MessageView.swift in Sources */,

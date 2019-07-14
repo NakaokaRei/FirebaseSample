@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "81B9FC5E-2784-4834-BF6D-63D0B1A05D40"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "129D8470-A8E0-43BA-ACD9-661DB3BFFD77"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseSample/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "129D8470-A8E0-43BA-ACD9-661DB3BFFD77 - cbc71a344d364562"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(FirebaseSample.MessageView, SwiftUI.ForEach&lt;SwiftUI.IdentifierValuePairs&lt;Swift.Array&lt;Swift.String&gt;, Swift.String&gt;, FirebaseSample.MessageRow&gt;)&gt; in closure #1 () -&gt; SwiftUI._AutoResultView&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(FirebaseSample.MessageView, SwiftUI.ForEach&lt;SwiftUI.IdentifierValuePairs&lt;Swift.Array&lt;Swift.String&gt;, Swift.String&gt;, FirebaseSample.MessageRow&gt;)&gt;&gt;&gt; in FirebaseSample.ContentView.body.getter : some"
+                  moduleName = "FirebaseSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rei/work/iphoneDev/SwiftUI/FirebaseSample/FirebaseSample/View/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "129D8470-A8E0-43BA-ACD9-661DB3BFFD77 - 809fb53bd870dee1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; FirebaseSample.MessageRow in closure #1 () -&gt; SwiftUI.TupleView&lt;(FirebaseSample.MessageView, SwiftUI.ForEach&lt;SwiftUI.IdentifierValuePairs&lt;Swift.Array&lt;Swift.String&gt;, Swift.String&gt;, FirebaseSample.MessageRow&gt;)&gt; in closure #1 () -&gt; SwiftUI._AutoResultView&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(FirebaseSample.MessageView, SwiftUI.ForEach&lt;SwiftUI.IdentifierValuePairs&lt;Swift.Array&lt;Swift.String&gt;, Swift.String&gt;, FirebaseSample.MessageRow&gt;)&gt;&gt;&gt; in FirebaseSample.ContentView.body.getter : some"
+                  moduleName = "FirebaseSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rei/work/iphoneDev/SwiftUI/FirebaseSample/FirebaseSample/View/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -25,7 +25,7 @@ struct MessageView : View {
                     guard !self.message.isEmpty else {
                         return
                     }
-                    self.firebaseModel.add(name: self.message)
+                    self.firebaseModel.add(comment: self.message)
                     self.clear()
             }
         }

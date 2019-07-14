@@ -14,14 +14,23 @@ import Firebase
 final class FirebaseViewModel: BindableObject{
     let didChange = PassthroughSubject<FirebaseViewModel, Never>()
     var DBRef:DatabaseReference!
+    var messageList: [String] = ["これはサンプルです"] {
+        didSet {
+            didChange.send(self)
+        }
+    }
     
     init() {
         DBRef = Database.database().reference()
+//        DBRef.child("message").observe(.childAdded, with: { [weak self](snapshot) -> Void in
+//            let message = String(describing: snapshot.childSnapshot(forPath: "comment").value!)
+//            self?.messageList.append(message)
+//        })
     }
     
-    func add(name: String) {
-        let data = ["name": name]
-        DBRef.child("user/01").setValue(data)
+    func add(comment: String) {
+        let data = ["comment": comment]
+        DBRef.child("message").childByAutoId().setValue(data)
     }
 
 }
