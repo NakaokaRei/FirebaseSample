@@ -13,7 +13,7 @@ struct ContentView : View {
     var body: some View {
         NavigationView{
             List{
-                MessageView()
+                MessageView(firebaseModel: firebaseModel)
                 ForEach(firebaseModel.messageList.identified(by: \.self)){ comment in
                     MessageRow(message: comment)
                 }

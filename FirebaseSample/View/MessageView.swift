@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MessageView : View {
-    @EnvironmentObject private var firebaseModel: FirebaseViewModel
+    var firebaseModel: FirebaseViewModel
     @State private var message: String = ""
     var body: some View {
         HStack {
@@ -39,7 +39,7 @@ struct MessageView : View {
 #if DEBUG
 struct MessageView_Previews : PreviewProvider {
     static var previews: some View {
-        MessageView().environmentObject(FirebaseViewModel())
+        MessageView(firebaseModel: FirebaseViewModel())
     }
 }
 #endif
