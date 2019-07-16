@@ -22,15 +22,15 @@ final class FirebaseViewModel: BindableObject{
     
     init() {
         DBRef = Database.database().reference()
-        DBRef.child("message").observe(.childAdded, with: { [weak self](snapshot) -> Void in
-            let message = String(describing: snapshot.childSnapshot(forPath: "comment").value!)
+        DBRef.child("messages").observe(.childAdded, with: { [weak self](snapshot) -> Void in
+            let message = String(describing: snapshot.childSnapshot(forPath: "message").value!)
             self?.messageList.append(message)
         })
     }
     
-    func add(comment: String) {
-        let data = ["comment": comment]
-        DBRef.child("message").childByAutoId().setValue(data)
+    func add(message: String) {
+        let data = ["message": message]
+        DBRef.child("messages").childByAutoId().setValue(data)
     }
 
 }
