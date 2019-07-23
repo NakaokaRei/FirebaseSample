@@ -14,7 +14,7 @@ import Firebase
 final class FirebaseViewModel: BindableObject{
     let didChange = PassthroughSubject<FirebaseViewModel, Never>()
     var DBRef:DatabaseReference!
-    var messageList: [String] = ["これはサンプルです"] {
+    var messageList:[String] = ["これはサンプルです"] {
         didSet {
             didChange.send(self)
         }
@@ -24,6 +24,7 @@ final class FirebaseViewModel: BindableObject{
         DBRef = Database.database().reference()
         DBRef.child("messages").observe(.childAdded, with: { [weak self](snapshot) -> Void in
             let message = String(describing: snapshot.childSnapshot(forPath: "message").value!)
+            print(snapshot.key)
             self?.messageList.append(message)
         })
     }
