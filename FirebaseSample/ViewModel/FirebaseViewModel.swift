@@ -14,7 +14,7 @@ import Firebase
 final class FirebaseViewModel: BindableObject{
     let didChange = PassthroughSubject<FirebaseViewModel, Never>()
     var DBRef:DatabaseReference!
-    var messageList:[String] = ["これはサンプルです"] {
+    var messageList: [String] = ["これはサンプルです"] {
         didSet {
             didChange.send(self)
         }
